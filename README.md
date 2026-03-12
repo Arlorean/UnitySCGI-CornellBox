@@ -19,7 +19,9 @@ The image on the right was created using [Unity 6000.5.0a8](https://unity.com/re
 
 ## Setup
 
-- [Unity 6000.5.0a8](https://unity.com/releases/editor/alpha/6000.5.0a8) ([SRP Core 17.5.0](https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@17.5/manual/index.html))
+To create the project from scratch follow these steps:
+
+- [Unity 6000.5.0a8](https://unity.com/releases/editor/alpha/6000.5.0a8) ([SRP Core 17.5.0](https://docs.unity3d.com/Packages/com.unity.render-pipelines.core@17.5/manual/index.html)) Core 3D project.
 - Add `SURFACE_CACHE` to the [Player Scripting Define Symbols](https://docs.unity3d.com/6000.3/Documentation/Manual/dedicated-server-player-settings.html#ScriptCompilation) in the [Project Settings](https://docs.unity3d.com/6000.3/Documentation/Manual/class-ProjectSettingsWindow.html) window: <br> ![SURFACE_CACHE](Images/ProjectSettings-Player-ScriptingDefineSymbols-SURFACE_CACHE.png)
 - Add the `Surface Cache Global Illumination` renderer feature that should now appear in the [Add Renderer Feature](https://docs.unity3d.com/6000.3/Documentation/Manual/urp/urp-renderer-feature.html) drop down when you select your Universal Renderer Data asset: <br> ![Add Renderer Feature](/Images/URP-RendererFeature-SurfaceCacheGlobalIllumination.png)
 - Enable an emissive material or directional light (point/spot/area not yet supported). For the test scene the light emmitter Intensity was set to 6 to try to match the original Blender render: <br> ![Emission](Images/Material-EmissionIntensity.png)
